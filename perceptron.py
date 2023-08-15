@@ -97,7 +97,7 @@ def preprocess_data(data):
         y.append(1 if entry["target"][2] == 1 else 0)
     return np.array(X), np.array(y)
 
-def train_perceptron(X, y, epochs=100000, learning_rate=0.01):
+def train_perceptron(X, y, epochs=1000, learning_rate=0.01):
     weights = np.zeros(X.shape[1])
     bias = 0
     
